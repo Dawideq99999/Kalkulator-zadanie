@@ -1,0 +1,15 @@
+﻿@model Kalkulator.Models.Urodziny
+
+@{
+    ViewData["Title"] = "Formularz Urodziny";
+}
+
+<h1>Formularz Urodziny</h1>
+
+<form action="Urodziny">
+    <input type="text" asp-for="Imie" />Imie
+    <input type="number" asp-for="Rok" />rok urodzenia
+    <input type="submit" />
+</form>
+
+@ViewBag.powitanie
